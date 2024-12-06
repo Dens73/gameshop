@@ -1,0 +1,27 @@
+-- Таблица для продуктов
+CREATE TABLE products (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    image_url VARCHAR(255) NOT NULL,
+    price NUMERIC(10, 2) NOT NULL
+);
+
+-- Таблица для обратной связи
+CREATE TABLE feedback (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    phone VARCHAR(20) NOT NULL,
+    message TEXT NOT NULL
+);
+
+INSERT INTO products (name, image_url, price) VALUES
+('Resident Evil 2', './Пикчерс для сайта/Игра 1.jpg', 29.99),
+('Resident Evil 3', './Пикчерс для сайта/Игра 2.jpg', 49.99),
+('Resident Evil 4', './Пикчерс для сайта/Игра 3.png', 39.99)
+('The Witcher 3: Wild Hunt', './Пикчерс для сайта/Игра 1.jpg', 29.99),
+('Cyberpunk 2077', './Пикчерс для сайта/Игра 2.jpg', 49.99),
+('Red Dead Redemption 2', './Пикчерс для сайта/Игра 3.png', 39.99),
+('Grand Theft Auto V', './Пикчерс для сайта/Игра 1.jpg', 24.99),
+('Minecraft', './Пикчерс для сайта/Игра 2.jpg', 26.95),
+('Among Us', './Пикчерс для сайта/Игра 3.png', 4.99);

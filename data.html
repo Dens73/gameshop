@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store Data</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-blue">
+                <a class="navbar-brand d-flex align-items-center" href="index.html" style="text-decoration: none; color: inherit;">
+                    <img src="./Пикчерс для сайта/image 2.png" alt="Logo" width="76" height="68" class="d-inline-block align-top">
+                    <h2 style="margin-left: 10px;">Game Store</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="catalog.php">
+                                <i class="fas fa-th-large"></i> Каталог
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="support.html">
+                                <i class="fas fa-headset"></i> Поддержка
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop_menu.html">
+                                <i class="fas fa-shopping-cart"></i> Корзина
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-user"></i> Войти
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-globe"></i> RU
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Data Display -->
+    <div class="container mt-5">
+        <button id="refresh-data" class="btn btn-primary mb-3">Обновить данные</button>
+        <div id="data-container"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Подпишитесь на нас в соцсетях!</p>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <a href="https://t.me/Deniska_173" target="_blank" class="telegram-icon">
+                        <i class="bi bi-telegram" style="font-size: 30px; color: #0088cc; margin-left: 15px;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="data.js"></script>
+</body>
+</html>

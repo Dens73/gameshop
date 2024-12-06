@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-blue">
+                <a class="navbar-brand d-flex align-items-center" href="index.html" style="text-decoration: none; color: inherit;">
+                    <img src="./Пикчерс для сайта/image 2.png" alt="Logo" width="76" height="68" class="d-inline-block align-top">
+                    <h2 style="margin-left: 10px;">Game Store</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="catalog.php">
+                                <i class="fas fa-th-large"></i> Каталог
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="support.html">
+                                <i class="fas fa-headset"></i> Поддержка
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop_menu.html">
+                                <i class="fas fa-shopping-cart"></i> Корзина
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-user"></i> Войти
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-globe"></i> RU
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Корзина (0 товаров)</h1>
+        <div id="cart" class="cart">
+            <!-- Товары будут добавляться сюда -->
+        </div>
+        <div class="cart-summary">
+            <button id="checkout-button" disabled>Перейти к оплате</button>
+        </div>
+    </div>
+    <div id="payment-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Детали заказа</h2>
+            <p id="order-summary">1 товаров - 29.99 Р</p>
+            <p>Скидка - 0 Р</p>
+            <p>Промокод - 0 Р</p>
+            <p>Итого - 29.99 Р</p>
+            <form id="payment-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="payment-method">Способ оплаты:</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="credit-card">Кредитная карта</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+                <button type="submit">Оплатить</button>
+            </form>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Подпишитесь на нас в соцсетях!</p>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <a href="https://t.me/Deniska_173" target="_blank" class="telegram-icon">
+                        <i class="bi bi-telegram" style="font-size: 30px; color: #0088cc; margin-left: 15px;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/crud.js"></script>
+    <script src="js/components/modal.js"></script>
+</body>
+</html>
